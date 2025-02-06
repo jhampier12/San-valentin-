@@ -62,7 +62,7 @@
             color: #d9534f;
             font-weight: bold;
             margin-bottom: 20px;
-            margin-top: 20px; /* Para asegurarse de que esté al principio */
+            margin-top: 20px;
         }
 
         .botones {
@@ -97,58 +97,25 @@
         }
 
         .expandir {
-            width: 500px; /* Aumentamos el tamaño */
-            height: 600px; /* Aumentamos el tamaño */
-            border-radius: 20px; /* Borde más redondeado */
+            width: 500px;
+            height: 600px;
+            border-radius: 20px;
         }
 
-        /* Estilos para el corazón */
-        .corazon {
-            font-size: 40px;
-            color: red;
-            position: absolute;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
-        }
-
-        /* Corazones pequeños animados */
-        .corazon-pequeno {
-            position: absolute;
-            font-size: 20px;
-            color: red;
-            opacity: 0;
-            animation: flotar 2s ease-in-out infinite;
-        }
-
-        /* Animación de flotación */
-        @keyframes flotar {
-            0% {
-                transform: translateY(0) scale(1);
-                opacity: 1;
-            }
-            100% {
-                transform: translateY(-50px) scale(1.5);
-                opacity: 0;
-            }
-        }
-
-        /* Galería de fotos */
+        /* Estilos para la galería */
         .galeria {
             display: flex;
             justify-content: center;
             margin-top: 20px;
             gap: 10px;
-            overflow: hidden;
-            height: 150px; /* Ajustamos para que solo se vea una foto a la vez */
+            height: 250px; /* Aumento de tamaño */
+            position: relative;
         }
 
         .foto {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
+            width: 250px; /* Aumento de tamaño */
+            height: 250px;
+            object-fit: contain; /* Muestra la imagen completa sin recortar */
             border-radius: 10px;
             opacity: 0;
             position: absolute;
@@ -191,9 +158,9 @@
         <div class="contenido" id="contenido">
             <p class="mensaje">Mi princesa Nashly ¿Quieres ser mi San Valentín?</p>
             <div class="galeria">
-                <img src="/Screenshot_2023-10-24-15-00-35-948_online.whatsticker.jpg" alt="Foto 1" class="foto">
-                <img src="/IMG-20250119-WA0011.jpeg" alt="Foto 2" class="foto">
-                <img src="/IMG-20250111-WA0094.jpg" alt="foto 3" class="foto">
+                <img src="jhampier12/Nashly-/Screenshot_2023-10-24-15-00-35-948_online.whatsticker.jpg" alt="Foto 1" class="foto">
+                <img src="jhampier12/Nashly-/IMG-20250111-WA0094.jpg" alt="Foto 2" class="foto">
+                <img src="jhampier12/Nashly-/IMG-20250119-WA0011.jpeg" alt="Foto 3" class="foto">
             </div>
             <div class="botones">
                 <button class="btn-abrir" onclick="aceptar()">Sí</button>
@@ -202,46 +169,25 @@
         </div>
     </div>
 
-    <div class="corazon" id="corazon">💗</div>
-
     <button class="btn-abrir" id="btnAbrir" onclick="abrirCarta()">Recibir Mensaje</button>
 
     <script>
         function abrirCarta() {
             document.getElementById("tapa").classList.add("mostrar");
             document.getElementById("contenido").classList.add("visible");
-            document.getElementById("carta").classList.add("expandir"); // Se expande la carta
-            document.getElementById("corazon").style.opacity = "1";
+            document.getElementById("carta").classList.add("expandir");
             document.getElementById("btnAbrir").style.display = "none";
-
-            // Crear corazones pequeños animados
-            for (let i = 0; i < 10; i++) {
-                let corazon = document.createElement("div");
-                corazon.innerHTML = "❤️";
-                corazon.classList.add("corazon-pequeno");
-                document.body.appendChild(corazon);
-
-                let x = Math.random() * window.innerWidth;
-                let y = Math.random() * 100 + 200; // Posición inicial
-
-                corazon.style.left = `${x}px`;
-                corazon.style.top = `${y}px`;
-                corazon.style.animationDuration = `${Math.random() * 2 + 1}s`;
-
-                // Eliminar el corazón después de la animación
-                setTimeout(() => corazon.remove(), 300000);
-            }
         }
 
         function aceptar() {
             document.body.innerHTML = `<h1>¡Yay! ¡Feliz San Valentín! 💘</h1>
-                                       <img src="/Shy Cat Sticker - Shy Cat - Descubrir y compartir GIFs.gif" width="200">
+                                       <img src="jhampier12/Nashly-/Shy Cat Sticker - Shy Cat - Descubrir y compartir GIFs.gif" width="200">
                                        <p>Sabía que dirías que sí, amor 💕</p>`;
         }
 
         function rechazar() {
             document.body.innerHTML = `<h1>¡Está bien! Espero que tengas un buen día amor.</h1>
-                                       <img src="/Cats Sad Sticker - Cats Sad - Descubre y comparte GIF.gif" width="200">
+                                       <img src="jhampier12/Nashly-/Cats Sad Sticker - Cats Sad - Descubre y comparte GIF.gif" width="200">
                                        <p>💔</p>`;
         }
     </script>
