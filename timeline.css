@@ -1,0 +1,28 @@
+.card-container {
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255,255,255,0.95);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.card {
+  margin: 20px 0;
+  text-align: center;
+}
+.card img, .card video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.nav-buttons {
+  margin-top: 20px;
+}
+button#volver {
+  margin-top: 20px;
+  background-color: #4caf50;
+}
+button#volver:hover {
+  background-color: #45a049;
+}

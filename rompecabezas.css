@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #fff0f5, #ffe6f2);
+}
+header h1 {
+  color: #e91e63;
+}
+#imagen-selector button, button {
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+#imagen-selector button:hover, button:hover {
+  background-color: #d81b60;
+}
+.hidden {
+  display: none;
+}
+/* Estilos para las grillas del rompecabezas */
+.puzzle-grid {
+  display: grid;
+  gap: 2px;
+  margin: 10px auto;
+}
+#puzzle-source {
+  grid-template-columns: repeat(var(--cols), 60px);
+  width: calc(var(--cols) * 62px);
+  border: 2px dashed #e91e63;
+  padding: 5px;
+}
+#puzzle-target {
+  grid-template-columns: repeat(var(--cols), 60px);
+  width: calc(var(--cols) * 62px);
+  border: 2px solid #4caf50;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.puzzle-piece {
+  width: 60px;
+  height: 60px;
+  background-size: calc(var(--cols) * 60px) calc(var(--rows) * 60px);
+  cursor: grab;
+  border: 1px solid #ccc;
+}
+.mensaje {
+  margin-top: 15px;
+  font-size: 1.2em;
+  color: #e91e63;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.mensaje.mostrar {
+  opacity: 1;
+}

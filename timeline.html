@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Línea de Tiempo</title>
+  <link rel="stylesheet" href="css/timeline.css">
+</head>
+<body>
+  <header>
+    <h1>💖 Línea de Tiempo</h1>
+  </header>
+  <div id="tarjetas-container" class="card-container">
+    <!-- Se generarán 100 tarjetas dinámicamente (ejemplo con 6; extiende el array según se requiera) -->
+  </div>
+  <button id="volver" onclick="volver()">🔙 Volver</button>
+  
+  <!-- Audio para la Línea de Tiempo -->
+  <audio id="musicaTimeline" loop>
+    <source src="music/musica.mp3" type="audio/mp3">
+    Tu navegador no soporta audio.
+  </audio>
+  
+  <script src="js/timeline.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adivina la Canción</title>
+  <link rel="stylesheet" href="../css/adivinaCancion.css">
+</head>
+<body>
+  <header><h1>🎵 Adivina la Canción</h1></header>
+  <main>
+    <div id="cancion-container">
+      <p id="letra-parcial">Generando canción...</p>
+      <div id="opciones"></div>
+      <div id="mensaje" class="mensaje"></div>
+      <div id="puntaje">Puntaje: 0</div>
+    </div>
+    <button onclick="nextCancion()">Siguiente ➡️</button>
+    <button id="volver" onclick="volverJuego()">🔙 Volver</button>
+  </main>
+  <script src="../js/adivinaCancion.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rompecabezas de Foto</title>
+  <link rel="stylesheet" href="../css/rompecabezas.css">
+</head>
+<body>
+  <header><h1>🧩 Rompecabezas de Foto</h1></header>
+  <main>
+    <div id="imagen-selector">
+      <p>Elige una imagen para armar el rompecabezas:</p>
+      <button onclick="seleccionarImagen(1)">Imagen 1</button>
+      <button onclick="seleccionarImagen(2)">Imagen 2</button>
+      <button onclick="seleccionarImagen(3)">Imagen 3</button>
+      <button onclick="seleccionarImagen(4)">Imagen 4</button>
+      <button onclick="seleccionarImagen(5)">Imagen 5</button>
+    </div>
+    <div id="rompecabezas-container" class="hidden">
+      <div id="puzzle-target" class="puzzle-grid"></div>
+      <div id="puzzle-source" class="puzzle-grid"></div>
+      <p id="temporizador"></p>
+      <div id="mensaje" class="mensaje"></div>
+      <button onclick="terminarRompecabezas()">Terminar</button>
+      <button onclick="reiniciarRompecabezas()">Reiniciar</button>
+    </div>
+    <button id="volver" onclick="volverJuego()">🔙 Volver</button>
+  </main>
+  <script src="../js/rompecabezas.js"></script>
+</body>
+</html>

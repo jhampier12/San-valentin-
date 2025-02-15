@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trivia Romántica</title>
+  <link rel="stylesheet" href="../css/trivia.css">
+</head>
+<body>
+  <header><h1>💖 Trivia Romántica</h1></header>
+  <main>
+    <div id="pregunta-container">
+      <p id="pregunta">Aquí va la pregunta</p>
+      <div id="opciones"></div>
+      <div id="mensaje" class="mensaje"></div>
+      <div id="puntaje">Puntaje: 0</div>
+    </div>
+    <button onclick="nextQuestion()">Siguiente ➡️</button>
+    <button id="volver" onclick="volverJuego()">🔙 Volver</button>
+  </main>
+  <script src="../js/trivia.js"></script>
+</body>
+</html>

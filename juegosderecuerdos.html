@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juegos de Recuerdos</title>
+  <link rel="stylesheet" href="css/juegosDeRecuerdos.css">
+</head>
+<body>
+  <header>
+    <h1>🎮 Juegos de Recuerdos</h1>
+  </header>
+  <main>
+    <div class="juegos-grid">
+      <button onclick="abrirJuego('games/preguntas.html')">❓ Juego de Preguntas</button>
+      <button onclick="abrirJuego('games/pictionary.html')">✏️ Pictionary de Pareja</button>
+      <button onclick="abrirJuego('games/rompeCodigo.html')">🔒 Rompe Códigos</button>
+      <button onclick="abrirJuego('games/trivia.html')">💖 Trivia Romántica</button>
+      <button onclick="abrirJuego('games/adivinaCancion.html')">🎵 Adivina la Canción</button>
+      <button onclick="abrirJuego('games/rompecabezas.html')">🧩 Rompecabezas de Foto</button>
+    </div>
+    <button id="volver" onclick="volverMenu()">🔙 Volver</button>
+  </main>
+  <script src="js/juegosDeRecuerdos.js"></script>
+</body>
+</html>
