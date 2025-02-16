@@ -1,9 +1,9 @@
 const imagenesRompecabezas = [
-  { id: 1, nombre: "Imagen 1", ruta: "/images/imagen1.jpg", piezas: 9, tiempo: 90 },
-  { id: 2, nombre: "Imagen 2", ruta: "/images/imagen2.jpg", piezas: 16, tiempo: 120 },
-  { id: 3, nombre: "Imagen 3", ruta: "/images/imagen3.jpg", piezas: 25, tiempo: 150 },
-  { id: 4, nombre: "Imagen 4", ruta: "/images/imagen4.jpg", piezas: 36, tiempo: 150 },
-  { id: 5, nombre: "Imagen 5", ruta: "/images/imagen5.jpg", piezas: 49, tiempo: 150 }
+  { id: 1, nombre: "Imagen 1", ruta: "imagen1.jpg", piezas: 9, tiempo: 90 },
+  { id: 2, nombre: "Imagen 2", ruta: "imagen2.jpg", piezas: 16, tiempo: 120 },
+  { id: 3, nombre: "Imagen 3", ruta: "imagen3.jpg", piezas: 25, tiempo: 150 },
+  { id: 4, nombre: "Imagen 4", ruta: "imagen4.jpg", piezas: 36, tiempo: 150 },
+  { id: 5, nombre: "Imagen 5", ruta: "imagen5.jpg", piezas: 49, tiempo: 150 }
 ];
 
 let tiempoRestante, temporizadorInterval;
@@ -133,5 +133,5 @@ function reiniciarRompecabezas() {
   document.getElementById('imagen-selector').classList.remove('hidden');
 }
 function volverJuego() {
-  window.location.href = "../juegosDeRecuerdos.html";
+  window.location.href = "juegosDeRecuerdos.html";
 }
