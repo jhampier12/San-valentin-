@@ -45,5 +45,5 @@ function terminarDibujo() {
   // (Asegúrate de tener un gif llamado confeti_hearts.gif en la carpeta images)
 }
 function volverJuego() {
-  window.location.href = "../juegosDeRecuerdos.html";
+  window.location.href = "juegosDeRecuerdos.html";
 }
