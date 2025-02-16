@@ -27,7 +27,7 @@ function actualizarTarjeta() {
       <p>${tarjeta.descripcion}</p>
       ${
         tarjeta.tipo === "img"
-          ? `<img src="images/${tarjeta.archivo}" alt="Imagen">`
+          ? `<img src="${tarjeta.archivo}" alt="Imagen">`
           : `<video controls><source src="${tarjeta.archivo}" type="video/mp4">Tu navegador no soporta videos.</video>`
       }
       <div class="nav-buttons">
