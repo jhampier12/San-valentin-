@@ -28,7 +28,7 @@ function actualizarTarjeta() {
       ${
         tarjeta.tipo === "img"
           ? `<img src="images/${tarjeta.archivo}" alt="Imagen">`
-          : `<video controls><source src="images/${tarjeta.archivo}" type="video/mp4">Tu navegador no soporta videos.</video>`
+          : `<video controls><source src="${tarjeta.archivo}" type="video/mp4">Tu navegador no soporta videos.</video>`
       }
       <div class="nav-buttons">
         <button onclick="anteriorTarjeta()">⬅ Anterior</button>
