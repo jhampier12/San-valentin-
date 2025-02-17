@@ -13,7 +13,7 @@ function mostrarMensaje(texto, gif) {
   const mensajeDiv = document.getElementById("mensaje");
   mensajeDiv.innerHTML = texto;
   if (gif) {
-    mensajeDiv.innerHTML += `<br><img src="${gif}" alt="Animación" style="max-width:2000px;">`;
+    mensajeDiv.innerHTML += `<br><img src="${gif}" alt="Animación" style="max-width:200px;">`;
   }
   mensajeDiv.classList.add("mostrar");
   setTimeout(() => {
@@ -41,12 +41,12 @@ function mostrarSecuenciaFotos() {
   const fotos = ["fondo.jpg", "foto1.jpg", "foto2.jpg", "foto3.jpg", "foto4.jpg"];
   let indice = 0;
   const interval = setInterval(() => {
-    container.innerHTML = `<img src="${fotos[indice]}" alt="Foto" style="max-width:30px;">`;
+    container.innerHTML = `<img src="${fotos[indice]}" alt="Foto" style="max-width:300px;">`;
     indice++;
     if (indice >= fotos.length) {
       clearInterval(interval);
     }
-  }, 2000); // cada 2 segundos cambia la foto
+  }, 20000); // cada 2 segundos cambia la foto
   // Reproducir música de fondo para la secuencia
   let audio = new Audio("Juhn - Recuerdos (Letra).mp3");
   audio.play();
