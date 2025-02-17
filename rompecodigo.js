@@ -13,7 +13,7 @@ function mostrarMensaje(texto, gif) {
   const mensajeDiv = document.getElementById("mensaje");
   mensajeDiv.innerHTML = texto;
   if (gif) {
-    mensajeDiv.innerHTML += `<br><img src="${gif}" alt="Animación" style="max-width:200px;">`;
+    mensajeDiv.innerHTML += `<br><img src="${gif}" alt="Animación" style="max-width:2000px;">`;
   }
   mensajeDiv.classList.add("mostrar");
   setTimeout(() => {
@@ -24,7 +24,7 @@ function mostrarMensaje(texto, gif) {
       // Después de 2 minutos, desaparecerá el gif y se mostrarán 5 fotos secuenciales con música de fondo
       setTimeout(() => {
         mostrarSecuenciaFotos();
-      }, 120000); // 120000 ms = 2 minutos
+      }, 1200); // 120000 ms = 2 minutos
     }
   }, 2000);
 }
