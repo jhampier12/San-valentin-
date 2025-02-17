@@ -24,7 +24,7 @@ function mostrarMensaje(texto, gif) {
       // Después de 2 minutos, desaparecerá el gif y se mostrarán 5 fotos secuenciales con música de fondo
       setTimeout(() => {
         mostrarSecuenciaFotos();
-      }, 120); // 120000 ms = 2 minutos
+      }, 120000); // 120000 ms = 2 minutos
     }
   }, 2000);
 }
@@ -38,7 +38,7 @@ function mostrarSecuenciaFotos() {
   // Mostrar 5 fotos secuenciales en el mismo lugar con música de fondo.
   const container = document.getElementById("mensaje");
   container.innerHTML = "";
-  const fotos = ["foto.jpg", "foto1.jpg", "foto2.jpg", "foto3.jpg", "foto4.jpg"];
+  const fotos = ["fondo.jpg", "foto1.jpg", "foto2.jpg", "foto3.jpg", "foto4.jpg"];
   let indice = 0;
   const interval = setInterval(() => {
     container.innerHTML = `<img src="${fotos[indice]}" alt="Foto" style="max-width:30px;">`;
