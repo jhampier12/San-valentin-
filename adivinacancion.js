@@ -368,7 +368,7 @@ function nextCancion() {
 }
 
 function volverJuego() {
-  window.location.href = "juegosDeRecuerdos.html";
+  window.location.href = "juegosderecuerdos.html";
 }
 
 window.onload = () => {
