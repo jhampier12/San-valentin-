@@ -60,6 +60,6 @@ function nextQuestion() {
   }
 }
 function volverJuego() {
-  window.location.href = "juegosDeRecuerdos.html";
+  window.location.href = "juegosderecuerdos.html";
 }
 mostrarPregunta();
