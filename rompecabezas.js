@@ -133,5 +133,5 @@ function reiniciarRompecabezas() {
   document.getElementById('imagen-selector').classList.remove('hidden');
 }
 function volverJuego() {
-  window.location.href = "juegosDeRecuerdos.html";
+  window.location.href = "juegosderecuerdos.html";
 }
